@@ -1,0 +1,118 @@
+/* Show Page Animation */
+body {
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scrollbar Customization */
+body {
+    /* Hide Horizontal Scrollbar */
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #479F76;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #75B798;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #146C43;
+}
+
+
+/*  */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+}
+
+span a.btn-back:hover {
+    color: #a8bbbf !important;
+}
+
+#guest-history tbody tr:hover:not(.empty) {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td:first-child,
+th:first-child {
+    border-radius: .25rem 0 0 .25rem;
+}
+
+td:last-child,
+th:last-child {
+    border-radius: 0 .25rem .25rem 0;
+}
